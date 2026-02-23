@@ -1,0 +1,56 @@
+body{
+  margin:0;
+  font-family:sans-serif;
+  background:url("./assets/bg.jpg") no-repeat center center/cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+
+.container{
+  text-align:center;
+  background:rgba(255,255,255,0.25);
+  backdrop-filter:blur(12px);
+  padding:30px;
+  border-radius:15px;
+  width:600px;
+  max-width:95%;
+  box-shadow:0 8px 32px rgba(0,0,0,0.2);
+}
+
+.search input{
+  padding:12px;
+  width:250px;
+}
+
+.search button{
+  padding:12px;
+  margin-left:10px;
+}
+
+.card{
+  background:rgba(255,255,255,0.4);
+  padding:15px;
+  border-radius:10px;
+  margin:15px auto;
+}
+
+.big img{
+  width:100px;
+}
+
+.small img{
+  width:50px;
+}
+
+.forecast{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.small{
+  width:90px;
+}
