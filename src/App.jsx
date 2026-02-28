@@ -72,7 +72,7 @@ export default function App() {
       {/* hourly */}
       {hourly.length > 0 && (
         <div className="hourly">
-          <h3>Remaining Today</h3>
+          <h3>Hours Remaining Today</h3>
           <div className="hourly-row">
             {hourly.map((h, i) => (
               <HourlyCard key={i} data={h} />
@@ -82,11 +82,18 @@ export default function App() {
       )}
 
       {/* 5 day */}
-      <div className="forecast">
-        {forecast.map((f, i) => (
-          <ForecastCard key={i} data={f} />
-        ))}
-      </div>
+     {/* ⭐ 5 day forecast */}
+{forecast.length > 0 && (
+  <div className="forecast-section">
+    <h3 className="forecast-heading">Next Five Days Forecast</h3>
+
+    <div className="forecast">
+      {forecast.map((f, i) => (
+        <ForecastCard key={i} data={f} />
+      ))}
+    </div>
+  </div>
+)}
     </div>
   );
 }

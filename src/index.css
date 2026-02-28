@@ -54,3 +54,34 @@ body{
 .small{
   width:90px;
 }
+.hourly{
+  margin-top:20px;
+}
+
+/* ⭐ horizontal scroll row */
+.hourly-row{
+  display:flex;
+  gap:12px;
+  overflow-x:auto;
+  padding:10px 0;
+}
+
+/* ⭐ hourly card */
+.hour-card{
+  background:rgba(255,255,255,0.4);
+  backdrop-filter:blur(6px);
+  padding:10px;
+  border-radius:12px;
+  min-width:80px;
+  text-align:center;
+  flex-shrink:0;   /* ⭐ prevents shrinking */
+}
+
+.hour-time{
+  font-size:12px;
+  margin-bottom:4px;
+}
+
+.hour-card img{
+  width:40px;
+}
