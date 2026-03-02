@@ -9,19 +9,25 @@ body{
 }
 
 .container{
-  text-align:center;
-  background:rgba(255,255,255,0.25);
-  backdrop-filter:blur(12px);
+  width:90%;
+  max-width:1200px;
+  margin:auto;
   padding:30px;
-  border-radius:15px;
-  width:600px;
-  max-width:95%;
-  box-shadow:0 8px 32px rgba(0,0,0,0.2);
+  display:flex;
+  flex-direction:column;
+  gap:25px;
 }
 
 .search input{
   padding:12px;
   width:250px;
+}
+.section-block{
+  background:rgba(255,255,255,0.25);
+  backdrop-filter:blur(12px);
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.15);
 }
 
 .search button{
@@ -84,4 +90,66 @@ body{
 
 .hour-card img{
   width:40px;
+}
+.weather-wrapper{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:15px;
+}
+
+.main-weather-card{
+  width:80%;
+  background:rgba(255,255,255,0.3);
+  padding:25px;
+  border-radius:20px;
+  text-align:center;
+}
+
+.info-row{
+  width:80%;
+  display:flex;
+  gap:15px;
+}
+
+.info-card{
+  flex:1;
+  background:rgba(255,255,255,0.3);
+  padding:15px;
+  border-radius:15px;
+  text-align:center;
+}
+
+.dashboard-row{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+.graph-block{
+  flex:2;
+}
+.hourly-block{
+  flex:1;
+}
+
+.graph-section{
+  flex:2;
+  background:rgba(255,255,255,0.3);
+  padding:20px;
+  border-radius:20px;
+}
+
+.hourly-section{
+  flex:1;
+  background:rgba(255,255,255,0.3);
+  padding:15px;
+  border-radius:20px;
+}
+
+.hourly-column{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  max-height:300px;
+  overflow-y:auto;
 }
